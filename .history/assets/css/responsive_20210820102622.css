@@ -1,0 +1,34 @@
+/* mobie and tablet */
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 70px;
+        --header-list-height: 0px;
+    }
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .header-logo-img {
+        width: 100px;
+    }
+
+    .header-logo {
+        width: 100px;
+        margin-right: 12px;
+    }
+
+    .header-cart {
+        width: 0;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* mobile */
+@media (max-width: 739px) {
+
+}

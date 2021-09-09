@@ -1,0 +1,21 @@
+/* mobie and tablet */
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 120px;
+        --header-list-height: 0px;
+    }
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* mobile */
+@media (max-width: 739px) {
+
+}

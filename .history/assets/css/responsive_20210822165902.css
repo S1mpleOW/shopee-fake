@@ -1,0 +1,127 @@
+/* mobie and tablet */
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 70px;
+        --header-list-height: 0px;
+    }
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    #header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .header-logo-img {
+        width: 100px;
+    }
+
+    .header-logo {
+        width: 100px;
+        margin-right: 12px;
+    }
+
+    .header-cart {
+        width: unset;
+    }
+
+    .header-cart-wrap {
+        padding: 0;
+    }
+
+    .header-search-input,
+    .header-search-selection-now {
+        font-size: 1.4rem;
+    }
+
+    .header-search-btn a {
+        width: 40px;
+    }
+
+    .header-cart-list {
+        position: fixed;
+        top: var(--header-search);
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0 calc((100% - 644px) / 2);
+    }
+
+    .header-cart-list::after {
+        display: none;
+    }
+
+    #content {
+        margin-top: var(--header-search);
+    }
+
+    .content__sort-bar {
+        display: flex;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header-logo {
+        width: unset;
+        margin-right: unset;
+    }
+
+    .header-with-search {
+        justify-content: space-between;
+    }
+
+    .header-cart {
+        margin: unset;
+    }
+
+    .header-cart .cart-icon {
+        padding-left: unset;
+    }
+
+    .header-search {
+        position: absolute;
+        top: calc(100% / 2);
+        left: 0;
+        right: 0;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        display: flex;
+        z-index: 0;
+        /* animation: search-on-mobile-in linear 0.2s; */
+    }
+    
+    .header-search-history {
+        width: 100%;
+        position: fixed;
+        top: calc(var(--header-search) + 40px);
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    @keyframes search-on-mobile-in {
+        from {
+            opacity: 0;
+            top: calc(100% / 2);
+        }
+        
+        to {
+            top: 100%;
+            opacity: 1;
+        }
+    }
+}
